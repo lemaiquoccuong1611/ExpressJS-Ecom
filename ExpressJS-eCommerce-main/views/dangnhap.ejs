@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./index.css">
+
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <style type="text/css">
+      carousel .image-slider .slick-slider .slick-prev{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+          <p class="text-black text-right mb-0">
+              <i class="fas fa-phone-alt"></i>
+              <span class="mx-3 border-right pr-3">0330 123 4567</span>
+              <i class="fas fa-search"></i>
+              <i class="fas fa-shopping-cart"></i>
+          </p>
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="/"><img src="./img/365fury-Logo.png" style="width: 200px;"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#foodNavBar" aria-controls="foodNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="foodNavBar">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">TRANG CHỦ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">GIỚI THIỆU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SẢN PHẨM</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">KHUYẾN MÃI</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+  
+        </div>
+      </header>
+
+      <signin>
+        <div class="container">
+            <form action="/login" method="POST">
+                <div class="container">
+                  <h1>Sign In</h1>
+                  <% if (message) { %>
+                  <div class="alert alert-<%= alert %>" role="alert">
+                    <%= message %>
+                  </div>
+                  <% } %>
+                  <hr>
+                  <label for="email"><b>Email</b></label>
+                  <input id="email" type="text" placeholder="Enter Your Email..." name="email" required>
+                 <label for="psw"><b>Password</b></label>
+                  <input id="password" type="password" placeholder="Enter Your Password..." name="psw" required>
+                 <div class="clearfix">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                  </div>
+                </div>
+              </form>
+        </div>
+      </signin>
+      
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-row">
+            <div class="col-3">
+              <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+              <ul>
+                <li><a href="#">Chính sách thẻ thành viên</a></li>
+                <li><a href="#">Chính sách đổi trả hàng</a></li>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h6>DANH MỤC</h6>
+              <ul>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h6>LIÊN HỆ</h6>
+              <ul>
+                <li><a href="#">0908080634</a></li>
+                <li><a href="#">0902451215</a></li>
+                <li><a href="#">duyenwww@gmail.com</a></li>
+                <li><a href="#">030235190026@st.buh.edu.vn</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h6>KẾT NỐI VỚI FOOD COOL</h6>
+              <ul>
+                <li><a href="#">
+                  <i class="fab fa-facebook"></i>
+                  Facebook</a></li>
+                <li><a href="#">
+                  <i class="fab fa-twitter"></i>
+                  Twitter</a></li>
+                <li><a href="#">
+                  <i class="fab fa-google-plus-g"></i>
+                  Google +</a></li>
+              </ul>
+            </div>
+  
+          </div> 
+        </div>
+  
+      </footer>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    <script src="./slider.js"></script>
+  
+  </body>
+</html>

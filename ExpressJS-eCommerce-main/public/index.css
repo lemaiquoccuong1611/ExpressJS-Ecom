@@ -1,0 +1,255 @@
+/* Header */
+header{
+    padding: 6px 0;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+header ul li a{
+    font-size: 13px;
+    display: inline-block;
+    padding: 3px 0;
+    letter-spacing: 1.5px;
+    color: black;
+    text-decoration: none;   
+    transition: all 0.5s;
+}
+
+#foodNavBar .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    display: block;
+    background: linear-gradient(to right,#fbbd61,#ec7532);
+    transition: all 0.5s;
+}
+#foodNavBar .nav-item:hover::after{
+    width: 100%;
+}
+#foodNavBar .nav-item.active::after{
+    width: 100%;
+}
+
+/* logo  */
+
+/*Carousel*/
+.carousel-text .title{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.image-slider img{
+    width: 100%;
+}
+
+.slick-prev{
+    display: none;
+}
+
+.slick-next{
+    display: none;
+}
+.carousel button{
+    background: black;
+    border-radius: 5px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.carousel-text .title1{
+    margin-bottom: 0;
+    color: #228B22;
+    font-size: 22px;
+}
+
+.carousel-img img{
+    width: 50%;
+}
+
+.carousel-text-child{
+    margin-top: 20%;
+}
+
+/* customize */
+customize {
+    text-align: center;
+}
+
+.tutorial .element_wrap .text_edit p i{
+    color: #178e91;
+    font-weight: 600;
+}
+
+.step_wrap{
+    display: flex;
+}
+
+.tutorial .element_wrap .text_edit h2{
+    font-size: 26px;
+    line-height: 1.2em;
+    letter-spacing: 2.6px;
+    color: #178e91;
+}
+
+.description_step{
+    margin: 5px 15px;
+    font-size: 14px;
+}
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    width: 280px;
+  }
+.gallery-top .row{
+    flex-wrap: nowrap;
+}
+.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+.desc {
+    padding: 15px;
+    text-align: center;
+  }
+gallery h2{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.2em;
+    letter-spacing: 2.6px;
+    color: #178e91;
+}
+
+email {
+    text-align: center;
+    background-color: #f2f2f2!important;
+}
+
+email .form-inline{
+    justify-content: center;
+}
+email .title{
+    margin-top: 40px;
+    font-size: 26px;
+    line-height: 1.2em;
+    letter-spacing: 2.6px;
+    color: #178e91;
+}
+
+/* FOOTER  */
+footer{
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 50px 0 0 0;
+    color: black;
+    background-color: #f2f2f2!important;
+    margin-top: 5%;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+.footer-row{
+    display: flex;
+    margin-bottom: 30px;
+}
+.footer-row h6{
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #178e91;
+    border: none;
+    padding-bottom: 20px;
+}
+.footer-row ul li a{
+    font-size: 13px;
+    display: inline-block;
+    padding: 3px 0;
+    letter-spacing: 1.5px;
+    color: black;
+    text-decoration: none;   
+    transition: all 0.5s;
+}
+.footer-row ul li a:hover{
+    color: #fbbd61;
+}
+
+footer .footer-row li:hover .fab{
+    color: #fbbd61;
+}
+.footer-infor{
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.footer-infor p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer-infor span{
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.footer-infor span:hover{
+    color: #ec7532;
+}
+
+/* Đăng nhập  */
+ signup .container, signin .container{
+    width: 70%;
+ }
+ h1, label{
+    color: #178e91;
+ }
+   input[type=text], input[type=password] {
+   width: 100%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   display: inline-block;
+   border: none;
+   width:100%;
+   resize: vertical;
+   padding:15px;
+   border-radius:15px;
+   border:0;
+   box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+ }
+button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   opacity: 0.9;
+ }
+button:hover {
+   opacity:1;
+ }
+.signupbtn, .signinbtn {
+   float: left;
+   width: 100%;
+   border-radius:15px;
+   border:0;
+   box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+ }
+
+ .signupbtn{
+     margin-bottom: 10px;
+ }
+
+ .signinbtn{
+     background-color: brown;
+ }
+.container {
+   padding: 16px;
+ }

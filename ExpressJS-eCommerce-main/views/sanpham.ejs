@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./sanpham.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+          <p class="text-black text-right mb-0">
+              <i class="fas fa-phone-alt"></i>
+              <span class="mx-3 border-right pr-3">0330 123 456</span>
+              <%if (user) { %>
+                <span><%= user.name %></span>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#logoutModal">
+                  Logout
+                </button>
+                <% }  else { %>
+                <i class="fas fa-shopping-cart"></i>
+              <a href="/login" style="color: black;"><i class="fas fa-user-plus"></i></a>
+              <% } %>
+          </p>
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#"><img src="./img/365fury-Logo.png" style="width: 200px;"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#foodNavBar" aria-controls="foodNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="foodNavBar">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">TRANG CHỦ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">GIỚI THIỆU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/product">SẢN PHẨM</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">KHUYẾN MÃI</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">LIÊN HỆ</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+  
+        </div>
+      </header>
+
+    <section class="wrapper">
+        <div class="container">
+            <div class="products">
+                <ul>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="../public/img/sanpham1.jpg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Product 1</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="../public/img/sanpham2.jpg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Product 2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>  
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="../public/img/sanpham3.jpg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Product 3</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="../public/img/sanpham4.jpg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Product 4</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="../public/img/sanpham5.jpg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Product 5</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="../public/img/sanpham6.jpg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Product 6</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="../public/img/sanpham7.jpg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Product 7</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="../public/img/sanpham8.jpg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Product 8</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-row">
+            <div class="col-3">
+              <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+              <ul>
+                <li><a href="#">Chính sách thẻ thành viên</a></li>
+                <li><a href="#">Chính sách đổi trả hàng</a></li>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h6>DANH MỤC</h6>
+              <ul>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="#">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h6>LIÊN HỆ</h6>
+              <ul>
+                <li><a href="#">0908080634</a></li>
+                <li><a href="#">0902451215</a></li>
+                <li><a href="#">duyenwww@gmail.com</a></li>
+                <li><a href="#">030235190026@st.buh.edu.vn</a></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h6>KẾT NỐI VỚI FOOD COOL</h6>
+              <ul>
+                <li><a href="#">
+                  <i class="fab fa-facebook"></i>
+                  Facebook</a></li>
+                <li><a href="#">
+                  <i class="fab fa-twitter"></i>
+                  Twitter</a></li>
+                <li><a href="#">
+                  <i class="fab fa-google-plus-g"></i>
+                  Google +</a></li>
+              </ul>
+            </div>
+  
+          </div> 
+        </div>
+  
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
